@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination Using Javascript</title>
+    <style>
+        h1{
+            font-family: sans-serif;
+        }
+        div{
+            width: 720px;
+            height: 480px;
+            margin: 0 auto;
+            border: 15px solid black;
+            box-shadow: 0px 0px 50px red;
+            border-radius: 14px;
+        }
+        center{
+            margin-top: 20px;
+        }
+    </style>
+
+    <script>
+        function one(){
+            var x = document.getElementById("image");
+            x.src="images/blog-1.png";
+        }
+        
+        function two(){
+            var x = document.getElementById("image");
+            x.src="images/blog-2.png";
+        }
+        
+        function three(){
+            var x = document.getElementById("image");
+            x.src="images/blog-3.png";
+        }
+        
+        function four(){
+            var x = document.getElementById("image");
+            x.src="images/blog-4.png";
+        }
+    </script>
+</head>
+<body>
+    <h1 align="center">Image Pagination</h1>
+    <div>
+        <img src="images/blog-1.png" width="720" height="480" id="image">
+    </div>
+    <center>
+        <button onclick="one()">1</button>
+        <button onclick="two()">2</button>
+        <button onclick="three()">3</button>
+        <button onclick="four()">4</button>
+    </center>
+</body>
+</html>
